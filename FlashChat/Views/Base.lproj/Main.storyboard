@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdT-2H-5e4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h9u-69-5YS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GfQ-m0-8EY">
-                                <rect key="frame" x="0.0" y="59" width="393" height="699"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="655"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="VAS-NS-iyO">
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQa-hG-2RS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2032" y="135"/>
+            <point key="canvasLocation" x="2958.0152671755723" y="134.50704225352112"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="xqt-Ex-Aqm">
@@ -100,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qau-Bj-zyN" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="59" width="393" height="177"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="8wo-hV-jGa">
                                         <rect key="frame" x="0.0" y="20" width="393" height="137"/>
@@ -125,7 +125,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sS-s6-4Lq" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="136" width="393" height="177"/>
+                                <rect key="frame" x="0.0" y="180" width="393" height="177"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0h-Zi-UUJ">
                                         <rect key="frame" x="0.0" y="126" width="393" height="51"/>
@@ -175,14 +175,16 @@
                             <constraint firstItem="Qau-Bj-zyN" firstAttribute="top" secondItem="AoH-rQ-yQG" secondAttribute="top" id="oUm-Mw-JPz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3KF-gB-EAJ"/>
                     <connections>
                         <outlet property="emailTextfield" destination="6nm-Fn-cg7" id="OCP-Od-4eb"/>
                         <outlet property="passwordTextfield" destination="sei-mU-t0f" id="f26-gh-MOV"/>
+                        <segue destination="bUT-B7-FAo" kind="show" identifier="RegisterToChat" id="5Cf-nU-XaH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Km0-03-j8p" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="-295"/>
+            <point key="canvasLocation" x="1874.0458015267175" y="-295.07042253521126"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="1CY-KL-URG">
@@ -193,7 +195,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9BL-hl-2Dr" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="59" width="393" height="177"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="dn2-yz-8I1">
                                         <rect key="frame" x="0.0" y="20" width="393" height="137"/>
@@ -218,7 +220,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9W-nX-cpD" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="136" width="393" height="177"/>
+                                <rect key="frame" x="0.0" y="180" width="393" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="SQZ-Y4-vGN">
                                         <rect key="frame" x="0.0" y="20" width="393" height="137"/>
@@ -268,14 +270,16 @@
                             <constraint firstItem="9BL-hl-2Dr" firstAttribute="leading" secondItem="C5a-z0-zxD" secondAttribute="leading" id="yFR-O1-VKH"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fzr-V2-Qu4"/>
                     <connections>
                         <outlet property="emailTextfield" destination="KKd-X6-aZg" id="Adq-lF-RUE"/>
                         <outlet property="passwordTextfield" destination="AV6-UF-Dc0" id="vRp-GT-8lR"/>
+                        <segue destination="bUT-B7-FAo" kind="show" identifier="LoginToChat" id="M1d-hk-mMe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FV8-bP-DDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="644"/>
+            <point key="canvasLocation" x="1874.0458015267175" y="643.66197183098598"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="n5O-8k-cch">
@@ -295,13 +299,16 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="DSZ-hV-mZy" kind="show" id="3Wo-P6-ajc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9j8-bP-Nuc">
                                 <rect key="frame" x="52" y="396" width="289" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="aJM-sY-QDN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
                                 <color key="textColor" name="BrandBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -316,6 +323,9 @@
                                     <color key="titleColor" name="BrandBlue"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Fao-YU-ZhT" kind="show" id="Pll-TP-0Gc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rDa-li-EUQ"/>
@@ -333,15 +343,37 @@
                             <constraint firstItem="9j8-bP-Nuc" firstAttribute="leading" secondItem="rDa-li-EUQ" secondAttribute="leading" constant="52" id="yV1-W7-ObK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qaM-dl-wm1"/>
                     <connections>
                         <outlet property="titleLabel" destination="9j8-bP-Nuc" id="PJs-YI-xBj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5z2-eG-kte" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-86" y="135"/>
+            <point key="canvasLocation" x="840.45801526717548" y="134.50704225352112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jOk-mz-ON7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h9u-69-5YS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b40-So-Eem">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rdT-2H-5e4" kind="relationship" relationship="rootViewController" id="smd-lk-iu5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0z-bV-8km" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86.25954198473282" y="134.50704225352112"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5Cf-nU-XaH"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="textfield" width="298" height="93"/>
